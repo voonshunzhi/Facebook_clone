@@ -1,0 +1,13 @@
+.topBar
+{
+    width: 100%;
+    height: 40px;
+    background-color: #191414;
+    margin: 0 0 10px 0;
+    min-width: 1050px;
+    display: flex;
+}
+.topBar .logo a
+{
+    color: #1ed760;
+}

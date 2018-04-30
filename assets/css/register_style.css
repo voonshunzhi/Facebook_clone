@@ -1,0 +1,79 @@
+html,body
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+form
+{
+    text-align: center;
+}
+#background
+{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.logIn_box
+{
+    position: relative;
+    top: 7%;
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #191414;
+}
+.logIn_header
+{
+    background-color: #191414;
+    color: #1ed760;
+    border-radius: 5px;
+}
+.logIn_header h1
+{
+    margin: 0 0;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+.logIn_header p
+{
+    text-align: center;
+    margin: 0 0;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+.logIn_box form input
+{
+    width: 40%;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #1ed760;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.logIn_box form input[type="submit"]
+{
+    color: white;
+    border-bottom: 0;
+    border: 1px solid #1ed760;
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#register,#login
+{
+    text-decoration: none;
+    color: white;
+}
