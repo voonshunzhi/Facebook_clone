@@ -9,6 +9,7 @@
         
         //Remember the value of email in case log in failed
         $_SESSION['logInEmail'] = $email;
+        $_SESSION['logInPassword'] = $password;
         
         $password = md5($password);
         

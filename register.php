@@ -48,7 +48,7 @@
        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
            <input type="email" name="logInEmail" placeholder="Email Address" value="<?php if(isset($_SESSION['logInEmail'])){echo $_SESSION['logInEmail'];}?>" required>
            <br>
-           <input type="password" name="logInPassword" placeholder="Password" required>
+           <input type="password" name="logInPassword" placeholder="Password" value="<?php if(isset($_SESSION['logInPassword'])){echo $_SESSION['logInPassword'];}?>" required>
            <br>
            <!--Displaying the error statement      -->
             <?php if(in_array("Email or password are incorrect.<br>",$errorArray)){echo "Email or password are incorrect.<br>";}?>
