@@ -38,11 +38,7 @@
             
         </form>
          
-         <?php
-           $user = new User($con,'jared_james');
-           echo $user -> getfistNameAndLastName();
-           
-           ?>
+         
         
         
         </div>

@@ -15,8 +15,11 @@ class Post
     {
         $body = strip_tags($body);
         $body = mysqli_real_escape_string($this -> con,$body);
-        $check_empty = preg_replace('/\s+/','',$body);//Delete all spaces and return the $body string
-        
+        $check_empty = preg_replace('/\s+/','',$body);//Delete all WHITE spaces and return the $body string 
+        //str_replace is FINE to remove space(due to spacebar in normal typing)
+        //preg_replace is to remove all whitespace (any form of space such as due to tab and newline) due to spacebar or tab  
+        //But both are similar and can be used alternatively
+    
         if($check_empty != " ")
         {
             //Current date and time
