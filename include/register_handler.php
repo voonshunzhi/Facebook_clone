@@ -103,7 +103,7 @@
             
             //Generate username by concatenating firstname and lastname
             $username = strtolower($fname . "_" . $lname);
-            $check_username_query = mysqli_query($con,"SELECR FROM users WHERE username = '$username'");
+            $check_username_query = mysqli_query($con,"SELECT * FROM users WHERE username = '$username'");
             
             $i=0;
             //If username exists already, add number to the username
@@ -111,7 +111,7 @@
             {
                 $i++;
                 $username = $username . "_" . $i;
-                $check_username_query = mysqli_query($con,"SELECR FROM users WHERE username = '$username'");
+                $check_username_query = mysqli_query($con,"SELECT * FROM users WHERE username = '$username'");
             }
             
             //Profile picture assignment

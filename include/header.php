@@ -37,7 +37,7 @@
            <a href="index.php">Swirlfeed!</a>
        </div>
        <nav>
-           <a href="" class="user_first_name">
+           <a href="<?php echo $userLoggedIn; ?>" class="user_first_name">
                <?php echo $user_first_name; ?>
            </a>
           <a href="">
@@ -55,7 +55,7 @@
            <a href="">
                <img src="assets/images/icons/icons8_Settings_50px.png" alt="Setting">
            </a>
-           <a href="">
+           <a href="include/logout_handler.php">
                <img src="assets/images/icons/icons8_Exit_50px.png" alt="Exit">
            </a>
        </nav>
